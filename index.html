@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Crud</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <h1 class="text-center text-white bg-success p-2">1'st Todo Crud using fetch with Generic Function</h1>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="todoForm">
+                            <div class='form-group'>
+                                <label for="todoInput"><strong>Enter Todo</strong></label>
+                                <input type="text" class="form-control" id="todoInput" required>
+                            </div>
+                            <button class="btn btn-outline-success btn-sm btn-block" id="addTodoBtn">AddTodo</button>
+                            <button type="button" class="btn btn-outline-success btn-sm btn-block d-none" id="updateTodoBtn">UpdateTodo</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="list-group" id="todoList">
+                            <!-- <li class="list-group-item d-flex justify-content-between">
+                                <strong>GYM</strong>
+                                <div>
+                                    <button class="btn-success">Edit</button>
+                                    <button class="btn-danger">Remove</button>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div id="spinner" class="d-none">
+<div class="spinner-border text-secondary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
